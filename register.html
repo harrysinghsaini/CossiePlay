@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Register</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script>
+      function run_first() {
+		var id_var = sessionStorage.li_id;
+		if(id_var) {
+			document.getElementById(id_var).style.backgroundColor = "black";
+		}
+	}
+	
+	function nav_li_selected(li_id) {	
+		for(i = 0; i < 6; i++) {
+			document.getElementById(i.toString()).style.backgroundColor = "";
+		}
+		document.getElementById(li_id.toString()).style.backgroundColor = "black";
+		
+		//store li_id in sessionStorage
+		sessionStorage.li_id = li_id.toString();		
+	}
+
+
+</script>
+</head>
+
+<body onLoad = "run_first()">
+	<div id="wrapper">
+	<header>
+    
+    	<h1 style="color:#193BC0;">Register</h1>
+        
+    </header>
+    <nav>
+        	<ul>
+            	<li><a href="index.html" id ="0" onClick="nav_li_selected(0)">Home</a></li>
+                <li><a href="why_us.html" id ="4" onClick="nav_li_selected(4)">Why Us</a></li>
+                <li><a href="dresses.html" id ="1" onClick="nav_li_selected(1)">Dresses</a></li>
+                <li><a href="party_guidelines.html" id ="2" onClick="nav_li_selected(2)">Party Guidelines</a></li>
+                <li><a href="register.html" id ="3" onClick="nav_li_selected(3)">Register</a></li>
+                
+                <li><a href="contact_us.html" id ="5" onClick="nav_li_selected(5)">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1 id ="main_h1">Register</h1>
+    
+    <section id="form">
+    	<h2>Sign Up Form:</h2>
+        <form >
+        <strong>Name: </strong>  <input type ="text" value=" " /> <br /> <br />
+        <strong>Phone Number: </strong> <input type="tel" value="" /> <br /><br />
+        <strong>How many people are coming? </strong>  
+        
+        <select name="dropdown" >
+          <option value="-" selected>-</option>
+          <option value="1" >1</option>
+          <option value="2" >2</option>
+          <option value="3" >3</option>
+          <option value="4" >4</option>
+          <option value="more than 4" >more than 4</option>
+        </select> <br /> <br />
+        <input type="button" name="button" value="Submit" />
+        </form>
+       
+    </section>
+    <section id="form1">
+    	<img src="images/sewing-hands-1418016_new.png" alt="">
+    </section>
+    <footer><h3>Design By  © Harpreet Singh - 2017</h3></footer>
+    </div>
+</body>
+</html>
+

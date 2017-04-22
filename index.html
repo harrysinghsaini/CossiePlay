@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cossie Play</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script>
+
+      function run_first() {
+		var id_var = sessionStorage.li_id;
+		if(id_var) {
+			document.getElementById(id_var).style.backgroundColor = "black";
+		}
+	}
+	
+	function nav_li_selected(li_id) {	
+		for(i = 0; i < 6; i++) {
+			document.getElementById(i.toString()).style.backgroundColor = "";
+		}
+		document.getElementById(li_id.toString()).style.backgroundColor = "black";
+		
+		//store li_id in sessionStorage
+		sessionStorage.li_id = li_id.toString();		
+	}
+
+
+</script>
+</head>
+
+<body onLoad = "run_first()">
+	<div id="wrapper">
+	<header>
+       
+    	<h1>Cossie Play</h1>
+       
+    </header>
+     <nav>
+        	<ul>
+            	<li><a href="index.html" id ="0" onClick="nav_li_selected(0)">Home</a></li>
+                <li><a href="why_us.html" id ="4" onClick="nav_li_selected(4)">Why Us</a></li>
+                <li><a href="dresses.html" id ="1" onClick="nav_li_selected(1)">Dresses</a></li>
+                <li><a href="party_guidelines.html" id ="2" onClick="nav_li_selected(2)">Party Guidelines</a></li>
+                <li><a href="register.html" id ="3" onClick="nav_li_selected(3)">Register</a></li>
+                
+                <li><a href="contact_us.html" id ="5" onClick="nav_li_selected(5)">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1 id = "main_h1">Cossie Play</h1>
+       
+    <section id="col1">
+    	<h2>Useful Links</h2>
+        
+          
+        <p>
+          <ol>
+          <li>
+          <a href="https://en.wikipedia.org/wiki/Cosplay" target="_blank">More Information About CossiePlay</a>
+          </li>
+          <li><a href="http://www.cosplay.com" target="_blank">Cosplay Community</a></li>
+          <li><a href="http://www.cosplaytutorial.com/index.php" target="_blank">Resouces for Customers</a></li>
+          </ol>
+         
+        </p>
+    </section>
+    <section id="col2">
+    	<h2>What is Cosplay?</h2>
+        <p>
+        Cosplay, a portmanteau of the words costume play, is a performance art in which participants called cosplayers wear costumes and fashion accessories to represent a specific character. Cosplayers often interact to create a subculture and a broader use of the term "cosplay" applies to any costumed role-playing in venues apart from the stage.  
+        </p>
+    </section>
+    <section id="col3">
+    <img src="images/alice-in-wonderland-872612_1280_new.png" alt="">
+    	
+        
+        
+    </section>
+    <section id="col4">
+    	<h2>Announcements</h2>
+        
+          
+        <p>
+          <ul>
+          <li>We have some cool things happening that we want people to know about: this month you can purchase <strong>3 drinks for the price of 2 </strong>at the bar.</li>        
+          
+          <li>First-time party-goers get a <strong>50% discount</strong> on entry</li>
+          <li>If you get a costume custom made, your next party <strong>entry is free</strong> if you wear that costume.</li>
+          <li>Wear your costume in to KFC on Stanton street and you can get a <strong>free drink </strong>with a 21-piece bucket. </li>
+          <h4>Tell them you’ve been to CossiePlay!</h4>
+          </ul>
+         
+        </p>
+    </section>
+    
+    <section id="col5">
+    	<img src="images/we-re-rabbits-1439192-1279x850_new.png"  alt=" we are rabits">
+    </section>
+    
+    
+    <section id="col6">
+    <h2> If you want to be our member of site</h2>
+    <p> just click on <a href="register.html" target="_blank">sign up link...</a> </p>
+    
+    
+    </section>
+   
+    
+    <footer><h3>Design By © Harpreet Singh- 2017</h3></footer>
+    </div>
+</body>
+</html>

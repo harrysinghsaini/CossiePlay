@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dresses</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script>
+      function run_first() {
+		var id_var = sessionStorage.li_id;
+		if(id_var) {
+			document.getElementById(id_var).style.backgroundColor = "black";
+		}
+	}
+	
+	function nav_li_selected(li_id) {	
+		for(i = 0; i < 6; i++) {
+			document.getElementById(i.toString()).style.backgroundColor = "";
+		}
+		document.getElementById(li_id.toString()).style.backgroundColor = "black";
+		
+		//store li_id in sessionStorage
+		sessionStorage.li_id = li_id.toString();		
+	}
+
+
+</script>
+</head>
+
+<body onLoad = "run_first()">
+	<div id="wrapper">
+	<header>
+    
+    	<h1 style="color:#193BC0;">Dresses</h1>
+        
+    </header>
+    <nav>
+        	<ul>
+            	<li><a href="index.html" id ="0" onClick="nav_li_selected(0)">Home</a></li>
+                <li><a href="why_us.html" id ="4" onClick="nav_li_selected(4)">Why Us</a></li>
+                <li><a href="dresses.html" id ="1" onClick="nav_li_selected(1)">Dresses</a></li>
+                <li><a href="party_guidelines.html" id ="2" onClick="nav_li_selected(2)">Party Guidelines</a></li>
+                <li><a href="register.html" id ="3" onClick="nav_li_selected(3)">Register</a></li>
+                
+                <li><a href="contact_us.html" id ="5" onClick="nav_li_selected(5)">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1 id ="main_h1">Dresses</h1>
+    <section id="dresses1">
+    	<img src="images/devils-570861_1280_new.png" alt="devil">
+        <p>
+        
+        </p>
+    </section>
+    <section id="table1">
+    	<h2>Price List</h2>
+        <p>
+        <table>
+  <tr>
+    <th>Costume</th>
+    <th>Size</th> 
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Spiderman</td>
+    <td>12</td>
+    <td>$49</td>
+  </tr>
+  <tr>
+    <td>Elf</td>
+    <td>16</td>
+    <td>$35</td>
+  </tr>
+  <tr>
+    <td>Darth Vader</td>
+    <td>M</td>
+    <td>$149</td>
+  </tr>
+  <tr>
+    <td>Ironman (with rocket boot)</td>
+    <td>M</td>
+    <td>$2,500</td>
+  </tr>
+  <tr>
+    <td>Bayonetta</td>
+    <td>8</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Diablo III-Demon Hunter</td>
+    <td>10</td>
+    <td>$250</td>
+  </tr>
+<tr>
+    <td>Harley Quinn</td>
+    <td>18</td>
+    <td>$125</td>
+  </tr>
+  <tr>
+    <td>Metroid-Samus Aran</td>
+    <td>L</td>
+    <td>$850</td>
+  </tr>
+<tr>
+    <td>Peter Pan</td>
+    <td>XS</td>
+    <td>$49</td>
+  </tr>
+  
+  <tr>
+    <td>Princess Leia(White)</td>
+    <td>10</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Spok(Star Trek)</td>
+    <td>S</td>
+    <td>$1,235</td>
+  </tr>
+
+
+</table>
+       
+       </p>
+    </section>
+    
+    	
+    <footer><h3>Design By  © Harpreet Singh- 2017</h3></footer>
+    </div>
+</body>
+</html>
+

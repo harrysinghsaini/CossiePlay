@@ -1,0 +1,188 @@
+@charset "utf-8";
+#wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+header {
+	background-image:url(images/book-fair-678264_1280_new.png);
+	height:300px;
+}
+header h1 {
+	font-size: 500%;
+	padding-left: 20px;
+	Color:#193BC0;
+}
+#main_h1{
+	clear: both;
+}
+header img{
+	float: left;
+	padding-right: 20px;
+	
+}
+
+
+nav ul{
+	float: left;
+	background-color: blue;
+	
+}
+ nav ul li {
+	list-style: none;
+	float:left;
+	font-size: 120%;
+	
+}
+
+ nav ul li a {
+	text-decoration: none;
+	display: block;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: bold;
+	color: white;
+}
+
+ nav ul li a:hover {
+	background-color: black;
+	
+}
+
+
+#col1 {
+	width: 30%;
+	float: left;
+	height: 200px;
+	background-color:skyblue;
+	
+	margin: 5px 20px  5px 15px;
+	padding: 5px;
+}
+#col2 {
+	width: 30%;
+	float: left;
+	height: 200px;
+	background-color:skyblue;
+	
+	margin: 5px 20px 5px 10px;
+	padding: 5px;	
+}
+#col3 {
+	width: 15%;
+	float: left;
+	height: 200px;
+	
+	margin: 5px 10px 10px 10px;
+	padding: 5px;
+}
+
+#col4 {
+	width:30%;
+	float:left;
+	height: 300px;
+	margin: 5px 20px 5px 15px;
+	background-color:skyblue;
+	
+	padding: 5px;
+}
+
+#col5 {
+	width :30%;
+	float:left;
+	height: 300px;
+	margin: 5px 40px 10px 10px;
+	
+	padding: 5px;
+}
+#col6 {
+	width :20%;
+	float:left;
+	height: 300px;
+	margin: 5px 10px 40px 10px;
+	background-color:skyblue;
+	padding: 5px;
+}
+#form {
+	width: 60%;
+	float:left;
+	height: 300px;
+	margin: 5px 20px 20px 10px;
+	background-color: skyblue;
+	padding : 5px;
+}
+#form1 {
+	width: 30%;
+	float:left;
+	height: 300px;
+	margin: 5px 20px 20px 10px;
+	
+	padding : 5px;
+}
+#contact1 {
+	background-color:skyblue;
+	float:left;
+	width: 35%;
+	height: 300px;
+	margin: 5px 20px  5px 15px;
+	padding: 5px;
+}
+#contact2 {
+	
+	background-color:skyblue;
+	width: 35%;
+	float:left;
+	height: 300px;
+	margin: 5px 15px  5px 20px;
+	padding: 5px;
+}
+#guide1{
+	background-color:skyblue;
+	float:left;
+	width: 45%;
+	height: 300px;
+	margin: 5px 20px  5px 15px;
+	padding: 5px;
+}
+#guide2{
+	
+	float:left;
+	width: 35%;
+	height: 300px;
+	margin: 5px 15px  5px 20px;
+	padding: 5px;
+}
+
+table, th, td {
+	border: 1px solid black;
+	padding: 3px;
+	width: 60%;
+	background-color:skyblue;
+}
+table {
+	border-space:  5px;
+	width: 60%;
+}
+
+#dresses1 {
+	
+	float:left;
+	width: 33%;
+	height: 350px;
+	margin: 5px 15px  5px 20px;
+	padding: 5px;
+}
+
+
+
+	
+	
+
+footer {
+	clear: both;
+	background-color: blue;
+}
+footer h3 {
+	font-size: 90%;
+	text-align: center;
+	color:white;
+}
